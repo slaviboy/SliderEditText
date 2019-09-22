@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SliderEditText">
+        <attr name="background_color" format="color" />
+        <attr name="foreground_color" format="color" />
+
+        <attr name="range_lower" format="float" />
+        <attr name="range_upper" format="float" />
+        <attr name="default_value" format="float" />
+        <attr name="round_decimal_places" format="integer" />
+
+        <attr name="suffix" format="string" />
+        <attr name="prefix" format="string" />
+
+        <attr name="corner_radius" format="dimension" />
+        <attr name="corner_radius_upper_left" format="dimension" />
+        <attr name="corner_radius_upper_right" format="dimension" />
+        <attr name="corner_radius_lower_left" format="dimension" />
+        <attr name="corner_radius_lower_right" format="dimension" />
+
+        <attr name="background_padding" format="dimension" />
+        <attr name="background_padding_left" format="dimension" />
+        <attr name="background_padding_top" format="dimension" />
+        <attr name="background_padding_right" format="dimension" />
+        <attr name="background_padding_bottom" format="dimension" />
+
+        <attr name="foreground_padding" format="dimension" />
+        <attr name="foreground_padding_left" format="dimension" />
+        <attr name="foreground_padding_top" format="dimension" />
+        <attr name="foreground_padding_right" format="dimension" />
+        <attr name="foreground_padding_bottom" format="dimension" />
+
+        <attr name="text_padding" format="dimension" />
+        <attr name="text_padding_left" format="dimension" />
+        <attr name="text_padding_top" format="dimension" />
+        <attr name="text_padding_right" format="dimension" />
+        <attr name="text_padding_bottom" format="dimension" />
+    </declare-styleable>
+</resources>

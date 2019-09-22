@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/calories_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="290dp"
+        android:text="CALORIES"
+        android:textAlignment="center"
+        android:textColor="#363636"
+        android:textSize="52sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/calculator_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:text="(by slaviboy)"
+        android:textAlignment="center"
+        android:textColor="#858585"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/calories_label" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_vertical_in_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <!--region Fish -->
+    <ImageView
+        android:id="@+id/fish_image"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_fish"
+        app:layout_constraintBottom_toBottomOf="@+id/fish_slider"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_in_center"
+        app:layout_constraintTop_toTopOf="@+id/fish_slider" />
+
+    <com.slaviboy.slideredittext.SliderEditText
+        android:id="@+id/fish_slider"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="30dp"
+        android:selectAllOnFocus="true"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        app:background_padding="5dp"
+        app:corner_radius="10dp"
+        app:default_value="710"
+        app:foreground_padding="3dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vertical_in_center"
+        app:layout_constraintTop_toBottomOf="@+id/calculator_label"
+        app:range_lower="0"
+        app:range_upper="1000"
+        app:round_decimal_places="0"
+        app:suffix=" g"
+        app:text_padding_left="18dp" />
+    <!--endregion-->
+
+    <!--region Steak -->
+    <ImageView
+        android:id="@+id/steak_image"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_meat"
+        app:layout_constraintBottom_toBottomOf="@+id/steak_slider"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_in_center"
+        app:layout_constraintRight_toLeftOf="@+id/steak_slider"
+        app:layout_constraintTop_toTopOf="@+id/steak_slider" />
+
+    <com.slaviboy.slideredittext.SliderEditText
+        android:id="@+id/steak_slider"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="0dp"
+        android:selectAllOnFocus="true"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        app:background_padding="5dp"
+        app:corner_radius="10dp"
+        app:default_value="420"
+        app:foreground_padding="3dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vertical_in_center"
+        app:layout_constraintTop_toBottomOf="@+id/fish_slider"
+        app:range_lower="0"
+        app:range_upper="1000"
+        app:round_decimal_places="0"
+        app:suffix=" g"
+        app:text_padding_left="18dp" />
+
+    <!--endregion-->
+
+    <!--region Milk -->
+    <ImageView
+        android:id="@+id/milk_image"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_milk"
+        app:layout_constraintBottom_toBottomOf="@+id/milk_slider"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_in_center"
+        app:layout_constraintTop_toTopOf="@+id/milk_slider" />
+
+    <com.slaviboy.slideredittext.SliderEditText
+        android:id="@+id/milk_slider"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="0dp"
+        android:selectAllOnFocus="true"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        app:background_padding="5dp"
+        app:corner_radius="10dp"
+        app:default_value="550"
+        app:foreground_padding="3dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vertical_in_center"
+        app:layout_constraintTop_toBottomOf="@+id/steak_slider"
+        app:range_lower="0"
+        app:range_upper="1000"
+        app:round_decimal_places="0"
+        app:suffix=" g"
+        app:text_padding_left="18dp" />
+
+    <!--endregion-->
+
+    <!--region Hamburger -->
+    <ImageView
+        android:id="@+id/hamburger_image"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_burger"
+        app:layout_constraintBottom_toBottomOf="@+id/hamburger_slider"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_in_center"
+        app:layout_constraintTop_toTopOf="@+id/hamburger_slider" />
+
+    <com.slaviboy.slideredittext.SliderEditText
+        android:id="@+id/hamburger_slider"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="0dp"
+        android:selectAllOnFocus="true"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        app:background_padding="5dp"
+        app:corner_radius="10dp"
+        app:default_value="250"
+        app:foreground_padding="3dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vertical_in_center"
+        app:layout_constraintTop_toBottomOf="@+id/milk_slider"
+        app:range_lower="0"
+        app:range_upper="1000"
+        app:round_decimal_places="0"
+        app:suffix=" g"
+        app:text_padding_left="18dp" />
+
+    <!--endregion-->
+
+
+    <TextView
+        android:id="@+id/total_calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="0 calories"
+        android:textAlignment="center"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hamburger_slider" />
+
+</android.support.constraint.ConstraintLayout>
